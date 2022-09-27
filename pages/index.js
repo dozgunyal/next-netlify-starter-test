@@ -24,7 +24,7 @@ export default function Home() {
 
       <main>
         <Header title="Redirector" />
-        <input type="text" onChange={(e) => setLink(e.target.value)}/>
+        <input type="text" onChange={(e) => setLink(e.target.value)} value={link}/>
         {link}
         <button onClick={() => redirect(link)}>Redirect</button>
         <button onClick={() => redirect(link)}>Redirect using 302</button>
